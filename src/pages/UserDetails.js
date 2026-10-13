@@ -36,3 +36,22 @@ const UserDetails = () => {
   );
 };
 export default UserDetails;
+
+  // ... (keep all your existing code above this)
+
+  return (
+    <div className="user-details">
+      <button onClick={() => navigate(-1)}>Back</button>
+      <h2>{user.name}</h2>
+      
+      {/* Add this line to show the ID */}
+      <p><strong>Employee ID:</strong> {user.id}</p> 
+      
+      <p><strong>Email:</strong> {user.email}</p>
+      <p><strong>Company:</strong> {user.company}</p>
+      <p><strong>Role:</strong> {user.role}</p>
+    </div>
+  );
+};
+
+export default UserDetails;
